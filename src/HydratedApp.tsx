@@ -1,5 +1,6 @@
+import {BrowserRouter} from 'react-router-dom'
+import {App} from './app.tsx'
 
-import {BrowserRouer} from 'react-router-dom'
 export const HydratedApp =()=>{
     return (
     <BrowserRouter>
