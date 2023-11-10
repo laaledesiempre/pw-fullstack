@@ -2,14 +2,14 @@ import { useState } from 'preact/hooks'
 import preactLogo from './assets/preact.svg'
 import viteLogo from '/vite.svg'
 import './app.css'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import {A} from './examples/A.jsx'
 import {B} from './examples/B.jsx'
 export function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <BrowserRouter>
+    <>
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} class="logo" alt="Vite logo" />
@@ -34,6 +34,7 @@ export function App() {
         <Route path='/' element={<A/>}/>
         <Route path='/B' element={<B/>}/>
       </Routes>
-    </BrowserRouter>
+      <script type='module' src='./client.js' async />
+    </>
   )
 }
