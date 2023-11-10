@@ -1,5 +1,5 @@
 import { hydrate } from 'preact'
-import { HydratedApp } from '../src/HydratedApp.tsx'
+import { HydratedApp } from '../src/HydratedApp'
 
 hydrate(
     HydratedApp()

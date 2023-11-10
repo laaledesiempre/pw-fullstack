@@ -1,7 +1,7 @@
 import express from 'express'
 import compression from 'compression'
 const path = require('path');
-import renderer from './renderer.tsx'
+import renderer from './renderer.js'
 
 const PORT = 3000
 
