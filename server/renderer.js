@@ -1,11 +1,8 @@
 import { render } from 'preact-render-to-string';
-import { StaticRouter } from "react-router-dom/server";
-import { App } from '../src/app.tsx'
+import { StaticApp } from '../src/StaticApp'
+import {h} from 'preact'
 
 export const renderer = (req) =>{
-    return render(
-        <StaticRouter location={req.url}>
-            <App/>
-        </StaticRouter>
+    return render(h(StaticApp)
     )
 }
